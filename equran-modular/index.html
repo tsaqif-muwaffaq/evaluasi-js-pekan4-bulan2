@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Al-Qur'an — Equran.id Reader (Modular)</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="container header-inner">
+      <h1 class="brand">Al-Qur'an <small class="muted">Equran.id Reader</small></h1>
+      <input id="search" aria-label="Cari surat" placeholder="Cari surat (nama, arti, atau nomor)" />
+    </div>
+  </header>
+
+  <main class="container main">
+    <section id="surah-list" class="card grid" aria-live="polite"></section>
+    <div id="loading" class="loading">Memuat daftar surat...</div>
+    <div id="error" class="error hidden" role="alert"></div>
+  </main>
+
+  <footer class="app-footer">
+    <div class="container">Sumber data: <a href="https://equran.id" target="_blank" rel="noopener">equran.id API</a></div>
+  </footer>
+
+  <script type="module" src="src/main.js"></script>
+  
+</body>
+</html>
